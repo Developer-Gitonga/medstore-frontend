@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+
+  <div class="containers">
+
+    <div class="diseases">
+      <div *ngFor="let disease of diseases">
+        <input type="radio" class="diseases" value="{{disease.name}}" [(ngModel)]="selectedDisease"
+          (change)="getMedicines()" class="btn-check " name="options" id="{{disease.name}}" autocomplete="off">
+        <label class="btn btn-warning diseases-btn" for="{{disease.name}}">{{disease.name}}</label>
+      </div>
+    </div>
+
+    <div class="medicines">
+      <div class="item" *ngFor="let item of medicines">
+
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img class="card-img-top" src="{{cloud}}{{item.picture}}" alt="
+              Card image cap">
+          </div>
+          <div class="card-body">
+            <div class="card-title">
+              <h5>{{item.name}}</h5>
+              <p class="card-text">{{item.description}}</p>
+
+            </div>
+            <hr>
+            <ul class="prices">
+              <li><s><strong> Original Price:</strong>500/</s></li>
+              <li><strong> Discount:</strong>200</li>
+            </ul>
+            <hr>
+
+            <div class="card-content">
+              <div class="card-buttons">
+                <a href="https://medistore-apis.herokuapp.com/prescription/{{item.id}} " class="btn btn-primary">Buy</a>
+                <a href="unit-form/medicine/{{item.id}}" class="btn btn-primary">Update units</a>
+                <a href="shopping-form/medicine/{{item.id}}" class="btn btn-primary">Buy test</a>
+                <a href="/single/{{item.id}}" class="btn btn-primary">Info Page</a>
+                <button style="margin-left: 50px" attr.data-target="#{{item.id}}" type="button" class="btn btn-primary"
+                  (click)="openPopup()">Info
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Test end -->
+        <!-- Button trigger modal -->
+
+        <div class="modal" tabindex="-1" role="dialog" id="{{item.id}}" [ngStyle]="{'display':displayStyle}">
+          <div class="modal-dialog modal-dialog-centered" role="document">
+
+            <div class="modal-content">
+              <button type="button" class="btn btn-danger" (click)="closePopup()">
+                Close
+              </button>
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLongTitle">{{item.name}}</h5>
+              </div>
+              <div class="modal-body">
+                <img class="modal-img" src="https://source.unsplash.com/rJVflgqasr4/1920x2880" alt="">
+                <p class="modal-description">{{item.description}}</p>
+              </div>
+              <div class="modal-footer">
+
+                <ul class="prices">
+                  <li><strong> Price:</strong>500</li>
+                  <li><strong> Current:</strong>400</li>
+                  <li><strong> Discount:</strong>200</li>
+                </ul>
+              </div>
+            </div>
+          </div>v>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+  integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+
+</html>

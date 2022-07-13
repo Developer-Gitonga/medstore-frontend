@@ -1,0 +1,54 @@
+<!-- <div class="container">
+  <form novalidate [formGroup]="myForm" #testForm="ngForm" (ngSubmit)="getText(testForm.value)">
+    <label>Medicine</label>
+    <input type="text" class="form-control" placeholder="{{medicines.id}}" formControlName="medicine">
+    <label>Units</label>
+    <input type="number" class="form-control" formControlName="units">
+    <label>Price</label>
+    <input type="number" class="form-control" formControlName="set_price">
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+  <pre>{{myForm.value | json}}</pre>
+
+</div> -->
+
+<div class="container shell ">
+  <section class="text-body">
+
+    <h2>What are we updating</h2>
+    <h3>Anonynmously</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, eum ipsa! Odio ratione, voluptas impedit
+      voluptate temporibus adipisci doloremque sapiente iure similique. Quisquam provident eos eius et eligendi
+      est dolore iste assumenda. Dignissimos facere obcaecati deleniti corrupti commodi reiciendis maxime?</p>
+    <h3>Recorded</h3>
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Tempora, eum ipsa! Odio ratione, voluptas impedit
+      voluptate temporibus adipisci doloremque sapiente iure similique. Quisquam provident eos eius et eligendi
+      est dolore iste assumenda. Dignissimos facere obcaecati deleniti corrupti commodi reiciendis maxime?</p>
+  </section>
+  <section class="get-in-touch">
+    <h1 class="title">Thank you for your donation</h1>
+    <form class="contact-form row" novalidate [formGroup]="myForm" #testForm="ngForm"
+      (ngSubmit)="getText(testForm.value)">
+      <div class="form-field col-lg-6">
+        <input id="name" class="input-text js-input" type="text" required placeholder="{{medicines.id}}"
+          formControlName="medicine">
+        <label class="label" for="name">Medicine</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+        <input id="email" class="input-text js-input" type="number" required formControlName="units">
+        <label class="label" for="email">Units Available</label>
+      </div>
+      <div class="form-field col-lg-6 ">
+        <input id="company" class="input-text js-input" type="number" required formControlName="set_price">
+        <label class="label" for="company">Set Price</label>
+      </div>
+
+      <div class="form-field col-lg-12">
+        <input class="submit-btn" type="submit" value="Submit">
+      </div>
+      <pre>{{myForm.value | json}}</pre>
+
+    </form>
+  </section>
+</div>

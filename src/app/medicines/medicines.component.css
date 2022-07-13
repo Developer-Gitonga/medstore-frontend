@@ -1,0 +1,154 @@
+body {
+  background-color: black;
+  height: 100vh;
+}
+.containers {
+  margin: 5%;
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  gap: 5rem;
+}
+@media only screen and (max-width: 600px) {
+  .diseases {
+    display: none;
+  }
+  .medicines {
+    width: 90vw;
+    place-items: center;
+  }
+}
+
+.medicines {
+  display: grid;
+  gap: 2rem;
+
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+}
+
+li {
+  text-decoration: none;
+  list-style: none;
+}
+
+.diseases {
+  width: 100%;
+}
+
+.diseases-btn {
+  display: grid;
+  place-content: center;
+
+  height: 70px;
+
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  color: black;
+  border-color: #6e6e6e2e;
+}
+.card-wrapper {
+  margin-bottom: 30px;
+}
+
+.card-image .card .card-body {
+  display: none;
+}
+.card-image-title-description .card .card-img-wrapper {
+  max-height: 160px;
+}
+.card-image-title-description .card {
+  position: relative;
+  min-height: 300px;
+}
+.card-image-title-description .card .card-body {
+  height: auto;
+  position: relative;
+  top: 0;
+  margin-bottom: -70px;
+}
+.card-image-title-description .card:hover .card-body {
+  top: -70px;
+}
+.card-image-title-description .card .card-body .card-title {
+  margin-bottom: 0.75rem;
+}
+.card {
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+  min-height: 100px;
+  max-height: 470px;
+}
+.card:hover {
+  box-shadow: 8px 12px 31px -10px #ab98ab;
+}
+.card-img-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50%;
+  overflow: hidden;
+}
+.card-img-wrapper img {
+  transition: 1.5s ease;
+}
+.card:hover .card-img-wrapper img {
+  transform: scale(1.15);
+}
+.card-body .card-title {
+  margin-bottom: calc(50% + 20px);
+  transition: 1.5s ease;
+}
+.card:hover .card-body .card-title {
+  margin-bottom: 0.75rem;
+  min-height: 100%;
+}
+
+.prices {
+  font-size: 15px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  place-content: center;
+  word-wrap: break-word;
+  text-align: center;
+}
+
+li {
+  display: block;
+}
+
+.card-img-top {
+  max-height: 200px;
+  max-width: 100%;
+}
+
+.card-text {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+/* Modal */
+.modal-img {
+  max-width: 550px;
+  max-height: 600px;
+  border-radius: 10px;
+  border-width: 2px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.459);
+}
+
+.modal-content {
+  display: grid;
+  place-items: center;
+  color: black;
+}
+
+.modal-title {
+  font-size: 30px;
+  color: black;
+}
+
+.modal-description {
+  font-size: 20px;
+  color: black;
+}

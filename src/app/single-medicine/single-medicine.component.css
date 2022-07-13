@@ -1,0 +1,132 @@
+.project-content {
+  color: white;
+}
+
+.rating-item {
+  margin: 3rem 0rem 3rem 0rem;
+  color: black;
+}
+
+.rating-circle {
+  padding: 35px 20px 35px 20px;
+
+  background-color: whitesmoke;
+  border-radius: 50%;
+}
+
+.ratings-container {
+  
+  background-color: #23232354;
+  color: white;
+  box-shadow: 0 0 5px #3b3b3b, 0 0 5px #3b3b3b, 0 0 50px #3b3b3b,
+    0 0 25px #3b3b3b;
+  border-radius: 10px;
+  padding: 1rem 0rem 1rem 0rem;
+  margin: 2rem 0rem 2rem 0rem;
+}
+
+.ratings {
+  display: grid;
+  place-content: center;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+.project-content {
+  margin: 4rem 0rem 4rem 0rem;
+}
+
+/* hover */
+.hover {
+  overflow: hidden;
+  position: relative;
+  padding-bottom: 60%;
+  width: 98.5vw;
+  height: 100%;
+  object-fit: contain;
+}
+
+.hover-overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 90;
+  transition: all 0.4s;
+}
+
+.hover img {
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+.hover-content {
+  position: relative;
+  z-index: 99;
+}
+
+.hover-3::after {
+  content: " ";
+
+  top: 17.9rem;
+  left: 25rem;
+  z-index: 90;
+  transition: all 0.3s;
+  transform: scale(1.1);
+  opacity: 0;
+  display: block;
+  opacity: 0;
+}
+
+.hover-3-content {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  width: 100%;
+  transform: translateY(-50%);
+  text-align: center;
+  z-index: 99;
+}
+
+.hover-3-description {
+  opacity: 0;
+  transform: scale(1.3);
+  transition: all 0.3s;
+}
+
+.hover-3 img {
+  width: 110%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.hover-3 .hover-overlay {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+.hover-3:hover img {
+  width: 100%;
+}
+
+.hover-3:hover::after {
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-3-description {
+  width: 140px;
+  border-style: solid;
+  border-color: white;
+  border-width: 1px;
+  padding: 10px 0px 10px 0px;
+  opacity: 1;
+  transform: none;
+}
+
+.hover-3:hover .hover-overlay {
+  background: rgba(0, 0, 0, 0.8);
+}

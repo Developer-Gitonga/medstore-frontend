@@ -1,0 +1,433 @@
+<!--  -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <title>MedistoreFrontend</title>
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <meta content="Free Website Template" name="keywords">
+  <meta content="Free Website Template" name="description">
+
+
+
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <!-- CSS Libraries -->
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+  <!-- Top Bar Start -->
+  <div class="top-bar d-none d-md-block">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="top-bar-left">
+            <div class="text">
+              <i class="fa fa-phone-alt"></i>
+              <p>+123 456 7890</p>
+            </div>
+            <div class="text">
+              <i class="fa fa-envelope"></i>
+              <p>info@example.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="top-bar-right">
+            <div class="social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Top Bar End -->
+
+  <!-- Nav Bar Start -->
+  <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">Medistore</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+          <a href="index.html" class="nav-item nav-link active">Home</a>
+          <a href="/donate-form" class="nav-item nav-link">Donate now</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Nav Bar End -->
+
+
+  <!-- Carousel Start -->
+  <div class="carousel">
+    <div class="container-fluid">
+      <div class="owl-carousel">
+        <div class="carousel-item">
+          <div class="carousel-img">
+            <img
+              src="https://images.unsplash.com/photo-1657037030554-ab3410b8820c?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxlZGl0b3JpYWwtZmVlZHwzOXx8fGVufDB8fHx8&auto=format&fit=crop&w=500&q=60"
+              alt="Image">
+          </div>
+          <div class="carousel-text">
+            <h1>Donate for a better world</h1>
+            <p>
+              Lorem ipsum dolor sit amet elit. Phasellus ut mollis mauris. Vivamus egestas eleifend dui ac
+              consequat at lectus in malesuada
+            </p>
+            <div class="carousel-btn">
+              <a class="btn btn-custom" href="/donate-form">Donate Now</a>
+              <a class="btn btn-custom btn-play" data-toggle="modal"
+                data-src="https://www.youtube.com/embed/DWRcNpR6Kdc" data-target="#videoModal">Watch
+                Video</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div class="donate" data-parallax="scroll" data-image-src="#" style="padding-top: 450px;  background-image: url('')">
+    <div class="container">
+      <div class="row align-items-center">
+        <div class="col-lg-7">
+          <div class="donate-content">
+            <div class="section-header">
+              <p>Donate Now</p>
+              <h2>Let's donate to needy people for better lives</h2>
+            </div>
+            <div class="donate-text">
+              <p>
+                Lorem ipsum dolor sit amet elit. Phasellus nec pretium mi. Curabitur facilisis ornare
+                velit non. Aliquam metus tortor, auctor id gravida, viverra quis sem. Curabitur non nisl
+                nec nisi maximus. Aenean convallis porttitor. Aliquam interdum at lacus non blandit.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-5">
+          <div class="donate-form">
+            <form>
+              <div class="control-group">
+                <input type="text" class="form-control" placeholder="Name" required="required" />
+              </div>
+              <div class="control-group">
+                <input type="email" class="form-control" placeholder="Email" required="required" />
+              </div>
+              <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-custom active">
+                  <input type="radio" name="options" checked> $10
+                </label>
+                <label class="btn btn-custom">
+                  <input type="radio" name="options"> $20
+                </label>
+                <label class="btn btn-custom">
+                  <input type="radio" name="options"> $30
+                </label>
+              </div>
+              <div>
+                <button class="btn btn-custom" type="submit">Donate Now</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <!-- JavaScript Libraries -->
+  <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+
+</body>
+
+</html>
+
+
+<router-outlet></router-outlet>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+
+  <div class="top-bar d-none d-md-block">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col-md-8">
+          <div class="top-bar-left">
+            <div class="text">
+              <i class="fa fa-phone-alt"></i>
+              <p>+254711264830</p>
+            </div>
+            <div class="text">
+              <i class="fa fa-envelope"></i>
+              <p>medistore.med@gmail.com</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="top-bar-right">
+            <div class="social">
+              <a href=""><i class="fab fa-twitter"></i></a>
+              <a href=""><i class="fab fa-facebook-f"></i></a>
+              <a href=""><i class="fab fa-linkedin-in"></i></a>
+              <a href=""><i class="fab fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Top Bar End -->
+
+  <!-- Nav Bar Start -->
+  <div class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <div class="container-fluid">
+      <a href="/" class="navbar-brand">Medistore</a>
+      <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
+        <div class="navbar-nav ml-auto">
+          <a href="/" class="nav-item nav-link active">Home</a>
+          <a href="/donate" class="nav-item nav-link">Donate now</a>
+          <div class="nav-item dropdown">
+            <a routerLink="medicines" class="nav-link dropdown-toggle" data-toggle="dropdown">Medicines</a>
+            <div class="dropdown-menu">
+              <a href="#" class="dropdown-item">Detail Page</a>
+              <a href="#" class="dropdown-item">What We Do</a>
+              <a href="#" class="dropdown-item">Meet The Team</a>
+              <a href="#" class="dropdown-item">Donate Now</a>
+              <a href="#" class="dropdown-item">Become A Volunteer</a>
+            </div>
+          </div>
+          <a href="#" class="nav-item nav-link">About us</a>
+          <a href="#" class="nav-item nav-link">Contact us</a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+</html>
+
+
+
+
+********************************
+/********** Top Bar CSS ***********/
+/**********************************/
+.top-bar {
+position: absolute;
+height: 45px;
+width: 100%;
+top: 0;
+left: 0;
+z-index: 3;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top-bar .top-bar-left {
+display: flex;
+align-items: center;
+justify-content: flex-start;
+}
+
+.top-bar .top-bar-right {
+display: flex;
+align-items: center;
+justify-content: flex-end;
+}
+
+.top-bar .text {
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: row;
+height: 45px;
+padding: 0 10px;
+text-align: center;
+border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top-bar .text:last-child {
+border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top-bar .text i {
+font-size: 16px;
+color: white;
+margin-right: 5px;
+}
+
+.top-bar .text p {
+color: #ffffff;
+font-size: 16px;
+font-weight: 500;
+margin: 0;
+}
+
+.top-bar .social {
+display: flex;
+height: 45px;
+font-size: 0;
+justify-content: flex-end;
+}
+
+.top-bar .social a {
+display: flex;
+align-items: center;
+justify-content: center;
+width: 45px;
+height: 100%;
+font-size: 16px;
+color: white;
+border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top-bar .social a:first-child {
+border-left: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.top-bar .social a:hover {
+color: #ffffff;
+background: white;
+}
+
+@media (min-width: 992px) {
+.top-bar {
+padding: 0 60px;
+}
+}
+
+/**********************************/
+/*********** Nav Bar CSS **********/
+/**********************************/
+.navbar {
+position: relative;
+transition: 0.5s;
+z-index: 999;
+}
+
+.navbar.nav-sticky {
+position: fixed;
+top: 0;
+width: 100%;
+box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+transition: 0.5s;
+}
+
+.navbar .navbar-brand {
+margin: 0;
+color: #ffffff;
+font-size: 45px;
+line-height: 0px;
+font-weight: 700;
+letter-spacing: 5px;
+text-transform: uppercase;
+}
+
+.navbar .navbar-brand img {
+max-width: 100%;
+max-height: 40px;
+}
+
+.navbar-dark .navbar-nav .nav-link,
+.navbar-dark .navbar-nav .nav-link:focus,
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+padding: 10px 15px 8px 15px;
+color: #ffffff;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover,
+.navbar-dark .navbar-nav .nav-link.active {
+color: white;
+transition: none;
+}
+
+.navbar .dropdown-menu {
+margin-top: 0;
+border: 0;
+border-radius: 0;
+background: #f8f9fa;
+}
+
+@media (min-width: 992px) {
+.navbar {
+position: absolute;
+width: 100%;
+top: 45px;
+padding: 20px 60px;
+background: transparent !important;
+border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+z-index: 9;
+}
+
+.navbar.nav-sticky {
+padding: 10px 60px;
+background: #20212b !important;
+border-bottom: none;
+}
+
+.page .navbar {
+background: #20212b !important;
+}
+
+.navbar a.nav-link {
+padding: 8px 15px;
+font-size: 16px;
+letter-spacing: 1px;
+}
+}
+
+@media (max-width: 991.98px) {
+.navbar {
+padding: 15px;
+background: #20212b !important;
+}
+
+.navbar a.nav-link {
+padding: 5px;
+}
+
+.navbar .dropdown-menu {
+box-shadow: none;
+}
+}

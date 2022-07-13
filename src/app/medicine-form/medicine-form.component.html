@@ -1,0 +1,23 @@
+<div class="container">
+  <form novalidate [formGroup]="myForm" #testForm="ngForm" (ngSubmit)="getText(testForm.value)">
+    <div class=" form-group">
+      <label>Name</label>
+      <input type="text" class="form-control" formControlName="name">
+    </div>
+    <label>description</label>
+    <input type="text" class="form-control" formControlName="description">
+    <label>picture</label>
+    <input type="file" class="form-control" formControlName="picture">
+    <div class="form-group">
+      <label>disease</label>
+      <select class="form-control" formControlName="disease">
+        <option value="">Please select a language</option>
+        <option *ngFor="let lang of langs" [value]="1">{{lang}}
+        </option>
+      </select>
+    </div>
+    <pre>{{myForm.value | json}}</pre>
+    <button type="submit" class="btn btn-primary">Submit</button>
+  </form>
+
+</div>

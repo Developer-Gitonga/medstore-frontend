@@ -1,0 +1,13 @@
+<p>prescription-upload</p>
+<label>
+    Title:
+    <input type="text" (change)="onTitleChanged($event)" />
+  </label>
+  <br/>
+  <label>
+    Cover:
+    <img src="">
+    <input type="file" (change)="onImageChanged($event)" />
+  </label>
+  <br/>
+  <button (click)="newPrescription">Upload Prescription</button>

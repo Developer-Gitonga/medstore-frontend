@@ -1,0 +1,51 @@
+<div class="col-lg-6 mb-3 mb-lg-0">
+  <div class="hover hover-3 text-white rounded"><img src="" alt="">
+    <div class="hover-overlay"></div>
+    <div class="hover-3-content px-5 py-4">
+      <h1></h1>
+      <h3 class="hover-3-title text-uppercase font-weight-bold mb-1">{{medicine.name}}</h3>
+      <!-- <a href="{{project.link}}" class=" btn hover-3-description small text-uppercase mb-0"style="margin-top:30px;">Visit Site</a> -->
+    </div>
+  </div>
+</div>
+
+<h2>Units remaining {{units_remaining.units_calculated}}</h2>
+<h2>Current Price {{current_price.discounted_price}}</h2>
+<div class="container">
+  <div class="project-content">
+    <!-- <h1>{{project.title}}</h1> -->
+    <!-- <p>By: {{project.user}}</p> -->
+
+    <!-- <p>{{project.description}}</p> -->
+    <div class="ratings-container">
+      <h2>Website ratings </h2>
+      <ul class="list-inline list-unstyled ratings">
+        <!-- <li class="list-inline-item rating-item"> <span class="rating-circle">{{d_avg}}/5 </span></li> -->
+        <!-- <li class="list-inline-item rating-item"><span class=" rating-circle ">{{c_avg}}/5 </span></li> -->
+        <!-- <li class=" list-inline-item rating-item "><span class="rating-circle">{{u_avg}}/5 </span></li> -->
+        <li class="list-inline-item"> Design Rating
+        </li>
+        <li class=" list-inline-item "> User Experience Rating
+        </li>
+        <li class=" list-inline-item "> Design Rating
+        </li>
+
+      </ul>
+    </div>
+    <div class=" row ">
+      <div class=" col-sm-5 col-md-6 col-12 pb-4 ">
+        <h1>Comments</h1>
+        <!-- {% for review in project.review_set.all %} -->
+        <div class=" comment mt-4 text-justify float-left ">
+          <!-- <img src=" {{review.profile.picture.url}} " alt=" " class=" rounded-circle " width=" 40 " height=" 40 "> -->
+          <!-- <h4>{{ review.user}}</h4>
+          <span>{{ review.date}}</span>
+          <br>
+          <p>{{ review.comment}}</p>
+          <p>{{ review.design_rating.d_avg}}</p> -->
+        </div>
+        <!-- {% endfor%} -->
+      </div>
+    </div>
+  </div>
+</div>
